@@ -1,0 +1,42 @@
+.sources {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000b5;
+
+  &-bar {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #444c56;
+    margin: 0;
+    padding: 10px;
+    z-index: 6;
+
+    &-source {
+      background-color: #2d333b;
+      border: 1px solid #2d333b;
+      padding: 10px;
+      border-radius: 5px;
+      color: #cdd9e5;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: 300ms ease-in-out;
+
+      &:hover {
+        background-color: #444c56;
+      }
+    }
+  }
+}
